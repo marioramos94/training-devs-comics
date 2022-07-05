@@ -1,38 +1,74 @@
-.App {
+body {
+  margin: 0;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  width:100%;
+  max-height:100vh ;
+  max-width: 400px;
+  margin: auto;
+  padding:5px;
+}
+.transcript-container {
+  max-height: 15vh;
+  overflow-y: scroll;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.comic {
+  height: 85vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.comic-image {
+  width: auto;
+  height: auto;  
+  max-width: 400px;  
+  max-height: 400px;
+}
+.comic-desc-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.comic-desc {
+  text-align: left;
+  padding:5px 10px;
+}
+.comic-title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 160%;
+  letter-spacing: 0.14px;
+}
+.comic-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;  
+  height: 400px;
+}
+.comic-views {
+  display: flex;
+  align-items: center;
+  width: 178px;
+  height: 22px;  
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;  
+  letter-spacing: 0.14px;  
+  color: #000000;  
+}  
+.comic-published-date {
+  width: 341px;
+  height: 22px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.14px;
+  color: #333333;
+  opacity: 0.5;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
